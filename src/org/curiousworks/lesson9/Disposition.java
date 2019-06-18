@@ -19,7 +19,7 @@ public class Disposition {
 			for (int j = 0; j < contentToWords.length; j++) {
 				for (int k = 0; k < happy.length; k++) {
 
-					if (contentToWords[j].equals(happy[k])) {
+					if (contentToWords[j].contains(happy[k])) {
 						happiness++;
 
 					}
@@ -40,7 +40,7 @@ public class Disposition {
 			for (int j = 0; j < contentToWords.length; j++) {
 				for (int m = 0; m < sad.length; m++) {
 
-					if (contentToWords[j].equals(sad[m])) {
+					if (contentToWords[j].contains(sad[m])) {
 						sadness++;
 
 					}
@@ -62,7 +62,7 @@ public class Disposition {
 			for (int j = 0; j < contentToWords.length; j++) {
 				for (int o = 0; o < love.length; o++) {
 
-					if (contentToWords[j].equals(love[o])) {
+					if (contentToWords[j].contains(love[o])) {
 						inLove++;
 
 					}
